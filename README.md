@@ -22,6 +22,6 @@ How to Install
 How to Uninstall
 ================
 
-1.	3. Open a Visual Studio Command Prompt and cd to C:\CustomProvider <br/><br/> ![](img/3.PNG) <br/> <br/>
-2.	7. Unregister the provider. `wevtutil um CustomProvider.man` <br/><br/> ![](img/10.PNG) <br/><br/>
+1.	Open a Visual Studio Command Prompt and cd to C:\CustomProvider <br/><br/> ![](img/3.PNG) <br/> <br/>
+2.	Unregister the provider. `wevtutil um CustomProvider.man` <br/><br/> ![](img/10.PNG) <br/><br/>
 3.	Open new event viewer window and provider will be removed. <br/><br/> ![](img/11.PNG) <br/><br/>

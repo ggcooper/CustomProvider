@@ -16,7 +16,7 @@ How to Install
 6.	Compile the source: `csc /target:library /unsafe /win32res:CustomProvider.res CustomProvider.cs` <br/><br/> ![](img/6.PNG) <br/>
 7.	Register the provider. `wevtutil im CustomProvider.man` <br/><br/> ![](img/7.PNG) <br/><br/>
 8.	You'll now see the custom provider in the Windows Event Viewer <br/><br/> ![](img/8.PNG) <br/> <br/>
-9.	To write to the log, open a Windows Powershell prompt and execute `New-WinEvent -ProviderName CustomProvider -Id 10000 -Payload @("MyValue1")` then refresh the event log and you'll see the event. <br/><br/> ![](img/9.PNG) <br/> <br/>
+9.	To write to the log, open a Windows Powershell prompt and execute `New-WinEvent -ProviderName CustomProvider -Id 10000 -Payload @("MyValue1")` then refresh the event log and you'll see the event. <br/><br/> ![](img/12.PNG) <br/> <br/> ![](img/9.PNG) <br/> <br/>
 10.	Congratulations, you've created a custom provider thanks to this repository and Daniel Gordon
 
 How to Uninstall

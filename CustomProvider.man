@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>  
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd"   
+              xmlns="http://schemas.microsoft.com/win/2004/08/events"   
+              xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"   
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+              xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace">  
+	<instrumentation>  
+		<events>  
+			<provider name="CustomProvider"   
+				 symbol="CustomProvider"  
+				 guid="{10ABB82A-BB5A-45FF-A7D6-D7369B235DD8}"   
+				 resourceFileName="D:\Active\github\gradygcooper\CustomProvider\CustomProvider.dll"   
+				 messageFileName="D:\Active\github\gradygcooper\CustomProvider\CustomProvider.dll">  
+				<events>  
+					<event symbol="CustomEvent" value="10000" version="1" channel="CustomProvider/Log" template="CustomTemplate" />  
+				</events>  
+				<levels/>  
+				<tasks/>  
+				<opcodes/>  
+				<channels>  
+					<channel name="CustomProvider/Log" value="0x10" type="Operational" enabled="true" />  
+				</channels>  
+				<templates>  
+					<template tid="CustomTemplate">
+						<data name="MyKey1" inType="win:UnicodeString" outType="xs:string" />  
+					</template>  
+				</templates>  
+			</provider>  
+		</events>  
+	</instrumentation>
+	<localization/>
+</instrumentationManifest>  

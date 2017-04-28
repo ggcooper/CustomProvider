@@ -8,10 +8,11 @@ Most of the content for this manifest came for an article by [Daniel Gordon](htt
 How to Install
 ==============
 
-1.	Clone the repository
-2.	Open a Visual Studio Command Prompt
-3.	Compile the manifest: `sh
+1.	Open a git bash prompt and go to c: <br/><br/> ![](img/1.PNG) <br/> <br/>
+2.	Clone the repository <br/><br/> ![](img/2.PNG) <br/> <br/> and cd to cloned directory.
+3.	Open a Visual Studio Command Prompt
+4.	Compile the manifest: `sh
 	mc -css Namespace CustomProvider.manifest
 	`
-4.	Create the resource file: `rc CustomProvider.rc`
-5.	Compile the source: `csc /target:library /unsafe /win32res:CustomProvider.res CustomProvider.cs`
+5.	Create the resource file: `rc CustomProvider.rc`
+6.	Compile the source: `csc /target:library /unsafe /win32res:CustomProvider.res CustomProvider.cs` 8.
